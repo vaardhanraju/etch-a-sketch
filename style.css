@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    margin: 30px 400px;
+    margin: 30px 410px;
     margin-top: 50px;
     font-family: "gloriahallelujah", sans-serif;
     font-size: 64px;
@@ -31,7 +31,6 @@ body {
 }
 
 #container {
-    /* outline: 2px solid red; */
     width: 500px;
     height: 500px;
     display: flex;

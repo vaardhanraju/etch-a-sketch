@@ -90,3 +90,16 @@ reset.addEventListener('click', () => {
         cellGrid.style.backgroundColor = "white";
    })
 })
+
+const chooseColor = document.getElementById('choose-color') 
+
+chooseColor.addEventListener('click', () => {
+    color = prompt('Enter your choice of colour')
+
+    hoveringEffect.forEach((cellGrid) => {
+        cellGrid.addEventListener("mouseenter", () => {
+            cellGrid.style.backgroundColor = color ;
+        })
+    })
+})
+
