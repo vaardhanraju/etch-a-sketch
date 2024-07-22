@@ -79,3 +79,14 @@ randomColorBtn.addEventListener('click', () => {
         })
     })
 })
+
+
+const reset = document.getElementById('reset')
+
+reset.addEventListener('click', () => {
+   const resetColor = document.querySelectorAll(".grid")
+
+   resetColor.forEach((cellGrid) => {
+        cellGrid.style.backgroundColor = "white";
+   })
+})
