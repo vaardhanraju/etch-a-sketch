@@ -16,9 +16,8 @@ body {
 }
 
 .header {
-    margin: 30px 300px;
+    margin: 30px 400px;
     margin-top: 50px;
-    /* outline: 1px solid yellow; */
     font-family: "gloriahallelujah", sans-serif;
     font-size: 64px;
     color: #F6B17A;
@@ -33,9 +32,11 @@ body {
 
 #container {
     outline: 2px solid red;
-    width: 750px;
+    width: 500px;
     height: 500px;
-    border-radius: 10px;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
 }
 
 .options {
@@ -55,19 +56,7 @@ button {
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .footer {
-    /* outline: 2px solid yellow; */
     padding: 20px;
     text-align: center;
     font-size: 24px;
