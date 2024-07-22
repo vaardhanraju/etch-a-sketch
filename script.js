@@ -42,7 +42,7 @@ gridSizeBtn.addEventListener('click', () => {
     for (let i = 0; i < cells.length; i++) {
         cells[i].remove("grid")
     }
-    
+
     cellSize = 500/gridSize;
     
     for (let i = 0; i < gridSize; i++) {
@@ -91,14 +91,18 @@ reset.addEventListener('click', () => {
    })
 })
 
+
+
 const chooseColor = document.getElementById('choose-color') 
 
 chooseColor.addEventListener('click', () => {
-    let color = prompt('Enter your choice of colour')
+    let color = prompt('Enter your choice of colour');
+
+    const hoveringEffect = document.querySelectorAll(".grid")
 
     hoveringEffect.forEach((cellGrid) => {
         cellGrid.addEventListener("mouseenter", () => {
-            cellGrid.style.backgroundColor = color ;
+            cellGrid.style.backgroundColor = color;
         })
     })
 })
